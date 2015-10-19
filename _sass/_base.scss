@@ -1,0 +1,97 @@
+body {
+  font-family: helvetica;
+  text-align: center;
+  font-family: "Merriweather";
+  color: #666;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+#content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  text-align: left;
+}
+
+#positions {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+li {
+  padding: 5px 0;
+}
+
+a, a:active, a:hover, a:visited {
+  color: #2771b5;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: "Open Sans";
+}
+
+h1 {
+  color: #000;
+  font-size: 60px;
+  font-decoration: underline;
+}
+
+#title {
+  a, a:active, a:hover, a:visited, a:active {
+    color: #000;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
+h2 {
+  color: #445;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+input {
+  border: 2px solid #999;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  margin: 1.5em auto 0;
+  width: 350px;
+  color: #444;
+}
+input[type=submit] {
+  margin: 0.5em auto 1em;
+  width: 150px;
+  background-color: #2771b5;
+  border: 2px solid #2771b5;
+  color: white;
+  border-radius: 5px;
+}
+
+#mail_form {
+  padding: 20px 0;
+}
+
+#footer {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  right: 5px;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Open Sans";
+}
+
+

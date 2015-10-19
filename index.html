@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h2>Weekly newsletter with EU friendly remote dev jobs</h2>
+
+  <div id="content">
+    Get a weekly list of job opportunities exclusively from
+    companies that are happy
+    to work with remote developers from <u>european time zones</u>. Save your time and avoid applying to positions
+    that are U.S. only.
+  </div>
+
+  {% include form.html %}
+  <ul class="post-list">
+    {% for post in site.posts %}
+      Check out <a href="{{ post.url | prepend: site.baseurl }}">the latest issue</a> to see this week's jobs! 
+    {% endfor %}
+  </ul>
+
+</div>
