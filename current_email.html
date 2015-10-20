@@ -1,0 +1,66 @@
+---
+layout: null
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,700,400|Open+Sans:600,400,700' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+      body { font-family: helvetica; text-align: center; font-family: "Merriweather"; color: #666; font-size: 18px; margin-top: 50px; }
+      #content { margin-left: auto; margin-right: auto; width: 100%; text-align: left; max-width: 800px; }
+      #positions { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding-top: 20px; padding-bottom: 20px; }
+      li { padding: 5px 0; }
+      a, a:active, a:hover, a:visited { color: #2771b5; }
+      a:hover { text-decoration: none; }
+      h1, h2 { font-family: "Open Sans"; }
+      h1 { color: #000; font-size: 60px; font-decoration: underline; }
+      #title a, #title a:active, #title a:hover, #title a:visited, #title a:active { color: #000; text-decoration: none; }
+      #title a:hover { color: #000; text-decoration: underline; }
+      h2 { color: #445; }
+      h3 { font-size: 20px; }
+    </style>
+  </head>
+  <body>
+  <h1>Europe Remotely</h1>
+
+  {% for post in site.posts limit: 1 %}
+    <h2>{{ post.title }} - {{ post.date | date: '%B %d, %Y' }}</h2>
+    Check out <a href="{{ post.url | prepend: site.baseurl }}">the latest issue</a> to see this week's jobs! 
+    <div id="content">
+      {{ post.content }}
+    </div>
+  {% endfor %}
+
+      <center>
+          <br/>
+          <br/>
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" id="canspamBarWrapper" style="background-color:#FFFFFF; border-top:1px solid #E5E5E5;">
+              <tr>
+                  <td align="center" valign="top" style="padding-top:20px; padding-bottom:20px;">
+                      <table border="0" cellpadding="0" cellspacing="0" id="canspamBar">
+                          <tr>
+                              <td align="center" valign="top" style="color:#606060; font-family:Helvetica, Arial, sans-serif; font-size:11px; line-height:150%; padding-right:20px; padding-bottom:5px; padding-left:20px; text-align:center;">
+                                  This email was sent to <a href="mailto:*|EMAIL|*" target="_blank" style="color:#404040 !important;">*|EMAIL|*</a>
+                                  <br/>
+                                  <a href="*|ABOUT_LIST|*" target="_blank" style="color:#404040 !important;"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="*|UNSUB|*" style="color:#404040 !important;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*" style="color:#404040 !important;">update subscription preferences</a>
+                                  <br/>
+                                  *|LIST:ADDRESSLINE|*
+                                  <br/>
+                                  <br/>
+                                  *|REWARDS|*
+                              </td>
+                          </tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+          <style type="text/css">
+              @media only screen and (max-width: 480px){
+                  table[id="canspamBar"] td{font-size:14px !important;}
+                  table[id="canspamBar"] td a{display:block !important; margin-top:10px !important;}
+              }
+          </style>
+      </center>
+  </body>
+</html>
