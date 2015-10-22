@@ -4,7 +4,12 @@ body {
   font-family: "Merriweather";
   color: #666;
   font-size: 18px;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+html {
+  position:relative;
+  min-height: 100%;
 }
 
 #content {
@@ -104,4 +109,6 @@ input[type=submit] {
   font-family: "Open Sans";
 }
 
-
+.footer-spacer {
+  height: 50px;
+}
