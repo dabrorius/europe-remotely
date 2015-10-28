@@ -23,7 +23,7 @@ layout: null
   <body>
   {% for post in site.posts limit: 1 %}
     <h2>Europe Remotely {{ post.title }} - {{ post.date | date: '%B %d, %Y' }}</h2>
-    Read this email <a href="{{ post.url | prepend: site.baseurl }}">on the web</a>.
+    Read this email <a href="{{ post.url | prepend: site.url }}">on the web</a>.
     <div id="content">
       {{ post.content }}
     </div>
