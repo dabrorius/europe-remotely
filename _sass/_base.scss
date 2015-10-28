@@ -26,6 +26,14 @@ html {
   padding-bottom: 20px;
   font-family: "Open Sans";
   color: #888;
+  .company {
+    a, a:active, a:hover, a:visited {
+      color: #888;
+    }
+    a:hover {
+      color: #aaa;
+    }
+  }
 }
 
 li {
@@ -37,7 +45,7 @@ a, a:active, a:hover, a:visited {
 }
 
 a:hover {
-  text-decoration: none;
+  color: #57a1d5;
 }
 
 h1, h2 {
