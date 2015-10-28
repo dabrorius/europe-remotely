@@ -13,8 +13,7 @@ layout: null
       li { padding: 5px 0; }
       a, a:active, a:hover, a:visited { color: #2771b5; }
       a:hover { text-decoration: none; }
-      h1, h2 { font-family: "Open Sans"; }
-      h1 { color: #000; font-size: 60px; font-decoration: underline; }
+      h2 { font-family: "Open Sans"; padding: 10px; background-color: #eee; }
       #title a, #title a:active, #title a:hover, #title a:visited, #title a:active { color: #000; text-decoration: none; }
       #title a:hover { color: #000; text-decoration: underline; }
       h2 { color: #445; }
@@ -22,11 +21,9 @@ layout: null
     </style>
   </head>
   <body>
-  <h1>Europe Remotely</h1>
-
   {% for post in site.posts limit: 1 %}
-    <h2>{{ post.title }} - {{ post.date | date: '%B %d, %Y' }}</h2>
-    Check out <a href="{{ post.url | prepend: site.baseurl }}">the latest issue</a> to see this week's jobs! 
+    <h2>Europe Remotely {{ post.title }} - {{ post.date | date: '%B %d, %Y' }}</h2>
+    Read this email <a href="{{ post.url | prepend: site.baseurl }}">on the web</a>.
     <div id="content">
       {{ post.content }}
     </div>
