@@ -16,7 +16,7 @@ layout: default
   {% include form.html %}
   <ul class="post-list">
     {% for post in site.posts limit: 1 %}
-      Check out <a href="{{ post.url | prepend: site.baseurl }}">the latest issue</a> to see this week's jobs! 
+      Check out <a href="{{ post.url | prepend: site.baseurl }}">the latest issue</a> to see this week's jobs!
     {% endfor %}
   </ul>
 
