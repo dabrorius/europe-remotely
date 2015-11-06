@@ -19,7 +19,7 @@ html {
   text-align: left;
 }
 
-#positions {
+.positions {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding-top: 20px;
@@ -50,6 +50,10 @@ a:hover {
 
 h1, h2 {
   font-family: "Open Sans";
+}
+
+h5 {
+  text-align: left;
 }
 
 h1 {
@@ -150,4 +154,24 @@ input[type=submit] {
 
 .footer-spacer {
   height: 50px;
+}
+
+#recent_jobs:first-child {
+  background-color: green;
+}
+#recent_jobs {
+  .positions {
+    list-style-type: none;
+    padding-left: 0;
+    border-top: none;
+    border-bottom: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    li {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+  }
 }

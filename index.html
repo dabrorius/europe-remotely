@@ -14,10 +14,14 @@ layout: default
   </div>
 
   {% include form.html %}
-  <div class="post-list">
-    {% for post in site.posts limit: 1 %}
-      Check out <a href="{{ post.url | prepend: site.baseurl }}">the latest issue</a> to see this week's jobs!
+  <p>
+    <h2>Jobs from last four issues</h2>
+  </p>
+  <div id="recent_jobs">
+    {% for post in site.posts limit: 4 %}
+      <div id="content">
+        {{ post.content }}
+      </div>
     {% endfor %}
   </div>
-
 </div>
