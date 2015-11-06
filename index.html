@@ -14,9 +14,6 @@ layout: default
   </div>
 
   {% include form.html %}
-  <p>
-    <h2>Jobs from last four issues</h2>
-  </p>
   <div id="recent_jobs">
     {% for post in site.posts limit: 4 %}
       <div id="content">
