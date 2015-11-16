@@ -2,8 +2,8 @@ body {
   font-family: helvetica;
   text-align: center;
   font-family: "Merriweather";
-  color: #666;
-  font-size: 18px;
+  color: #333;
+  font-size: 22px;
   margin-top: 30px;
 }
 
@@ -67,6 +67,9 @@ h1 {
     color: #000;
     text-decoration: underline;
   }
+  img {
+    width: 550px;
+  }
 }
 
 h2 {
@@ -99,7 +102,7 @@ input[type=submit] {
   padding: 10px 0 15px 0;
   max-width: 800px;
   background-color: #f3f3f3;
-  margin: 20px auto 20px auto;
+  margin: 30px auto 20px auto;
   border-radius: 5px;
   .note {
     font-family: "Open Sans";
