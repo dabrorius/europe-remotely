@@ -17,35 +17,36 @@ html {
   margin-right: auto;
   max-width: 800px;
   text-align: left;
-}
-
-#positions {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family: "Open Sans";
-  color: #888;
-  .company {
-    a, a:active, a:hover, a:visited {
-      color: #888;
-    }
-    a:hover {
-      color: #aaa;
-    }
+  h2 {
+    text-align: left;
+    font-size: 14px;
   }
 }
 
+#positions {
+  font-family: "Open Sans";
+  color: #888;
+  .company {
+      color: #111;
+      font-weight: bold;
+      padding-right: 0.5em;
+  }
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 0;
+}
+
 li {
-  padding: 5px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 a, a:active, a:hover, a:visited {
-  color: #2771b5;
+  color: #00aeef;
 }
 
 a:hover {
-  color: #57a1d5;
+  color: #2771b5;
 }
 
 h1, h2 {
@@ -56,6 +57,13 @@ h1 {
   color: #000;
   font-size: 60px;
   font-decoration: underline;
+}
+
+h2 {
+  margin-bottom: 0;
+  margin-top: 60px;
+  border-bottom: 3px solid #ddd;
+  color: #ddd;
 }
 
 #title {
@@ -91,8 +99,8 @@ input, textarea {
 input[type=submit] {
   margin: 0.5em auto 1em;
   width: 150px;
-  background-color: #2771b5;
-  border: 2px solid #2771b5;
+  background-color: #00aeef;
+  border: 2px solid #00aeef;
   color: white;
   border-radius: 5px;
   display: inline-block;
@@ -101,7 +109,7 @@ input[type=submit] {
 #mail_form {
   padding: 10px 0 15px 0;
   max-width: 800px;
-  background-color: #f3f3f3;
+  background-color: #f0f0f0;
   margin: 30px auto 20px auto;
   border-radius: 5px;
   .note {
