@@ -120,6 +120,7 @@ input, textarea {
   margin: 1.5em auto 0;
   width: 350px;
   color: #444;
+  font-family: "Open Sans";
 }
 
 input[type=submit] {
@@ -182,6 +183,16 @@ input[type=submit] {
     margin-bottom: 0;
     color: #445;
     text-align: left;
+  }
+  a, a:active, a:hover, a:visited {
+    color: $primary-color;
+    text-decoration: none;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  a:hover {
+    color: $hover-color;
+    border-bottom: 1px solid $hover-color;
   }
 }
 
