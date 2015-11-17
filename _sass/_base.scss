@@ -1,5 +1,6 @@
 $primary-color: #316CA2;
 $hover-color: #00adef;
+$break-point: 850px;
 
 body {
   font-family: helvetica;
@@ -22,6 +23,9 @@ ul {
       color: #111;
       font-weight: bold;
       padding-right: 0.5em;
+      @media screen and (max-width: 700px) {
+        display: block;
+      }
   }
   .date {
     display: inline-block;
@@ -74,6 +78,11 @@ h3 {
   margin-right: auto;
   max-width: 800px;
   text-align: left;
+
+  @media screen and (max-width: $break-point) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 #title {
@@ -86,7 +95,15 @@ h3 {
     text-decoration: underline;
   }
   img {
-    width: 550px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: $break-point) {
+    img {
+      width: 550px;
+    }
   }
 }
 
@@ -101,16 +118,17 @@ h3 {
 }
 
 #mail_form {
-  padding: 10px 0 15px 0;
-  max-width: 800px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
   background-color: #f0f0f0;
-  margin: 30px auto 20px auto;
+  margin: 30px 0 20px 0;
+  width: 100%;
   border-radius: 5px;
   .note {
     font-family: "Open Sans";
     font-size: 12px;
   }
-
 }
 
 input, textarea {
@@ -121,6 +139,10 @@ input, textarea {
   width: 350px;
   color: #444;
   font-family: "Open Sans";
+  @media screen and (max-width: $break-point) {
+    width: 90%;
+    box-sizing: border-box;
+  }
 }
 
 input[type=submit] {
@@ -131,6 +153,10 @@ input[type=submit] {
   color: white;
   border-radius: 5px;
   display: inline-block;
+  @media screen and (max-width: $break-point) {
+    width: 90%;
+    box-sizing: border-box;
+  }
 }
 
 #submit_job {
@@ -156,7 +182,7 @@ input[type=submit] {
   }
 
   textarea {
-    width: 95%;
+    width: 90%;
     height: 100px;
   }
 }
