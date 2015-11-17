@@ -7,7 +7,7 @@ body {
   font-family: "Merriweather";
   color: #333;
   font-size: 22px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 html {
@@ -97,6 +97,7 @@ h3 {
   border-bottom: 1px solid #ddd;
   text-align: center;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 #mail_form {
@@ -110,23 +111,25 @@ h3 {
     font-size: 12px;
   }
 
-  input, textarea {
-    border: 2px solid #999;
-    font-size: 16px;
-    padding: 10px;
-    margin: 1.5em auto 0;
-    width: 350px;
-    color: #444;
-  }
-  input[type=submit] {
-    margin: 0.5em auto 1em;
-    width: 150px;
-    background-color: $hover-color;
-    border: 2px solid $hover-color;
-    color: white;
-    border-radius: 5px;
-    display: inline-block;
-  }
+}
+
+input, textarea {
+  border: 2px solid #999;
+  font-size: 16px;
+  padding: 10px;
+  margin: 1.5em auto 0;
+  width: 350px;
+  color: #444;
+}
+
+input[type=submit] {
+  margin: 0.5em auto 1em;
+  width: 150px;
+  background-color: $hover-color;
+  border: 2px solid $hover-color;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
 }
 
 #submit_job {
@@ -135,9 +138,6 @@ h3 {
   padding-top: 20px;
   text-align: left;
   background-color: #ffffff;
-  border-top: 1px solid #ccc;
-  .form-group {
-  }
 
   label {
     display: block;
@@ -171,7 +171,7 @@ h3 {
 }
 
 .footer-spacer {
-  height: 50px;
+  height: 100px;
 }
 
 .frontpage-jobs {
