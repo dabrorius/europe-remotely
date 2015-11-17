@@ -1,8 +1,5 @@
 <div id="footer">
   <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a> |
-  {% for post in site.posts limit: 1 %}
-    <a href="{{ post.url | prepend: site.baseurl }}">Latest issue</a> |
-  {% endfor %}
   <a href="{{ "/archive.html" | prepend: site.baseurl }}">Archive</a> |
   <a href="{{ "/submit_job.html" | prepend: site.baseurl }}">Submit a job</a> |
   <a href="mailto:filip.defar@gmail.com">Contact</a>

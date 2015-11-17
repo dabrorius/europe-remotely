@@ -3,17 +3,16 @@ layout: default
 ---
 <div class="post">
 
-  <h2>{{ page.title }} - {{ page.date | date: '%B %d, %Y' }}</h2>
 
-  <div id="content">
+  <div class="content">
+    <h2>{{ page.title }} - {{ page.date | date: '%B %d, %Y' }}</h2>
     {{ content }}
   </div>
 
-  <div id="content">
+  <div class="content">
     Get a weekly list of job opportunities exclusively from
     companies that are happy
-    to work with remote developers from <u>european time zones</u>. Save your time and avoid applying to positions
-    that are U.S. only.
+    to work with remote developers from <u>european time zones</u>.
   </div>
 
   {% include form.html %}

@@ -4,8 +4,8 @@ layout: default
 
 <div class="home">
 
-  <h2>Archive</h1>
-  <div id="content">
+  <div class="content">
+  <h2 class="large">Archive</h1>
     <ul id="positions">
       {% for post in site.posts %}
         <li>
@@ -17,11 +17,10 @@ layout: default
     </ul>
   </div>
 
-  <div id="content">
+  <div class="content">
     Get a weekly list of job opportunities exclusively from
     companies that are happy
-    to work with remote developers from <u>European time zones</u>. Save your time and avoid applying to positions
-    that are U.S. only.
+    to work with remote developers from <u>European time zones</u>.
   </div>
 
   {% include form.html %}

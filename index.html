@@ -4,17 +4,16 @@ layout: default
 
 <div class="home">
 
-  <div id="content">
+  <div class="content">
     Get a weekly list of job opportunities exclusively from
     companies that are happy
-    to work with remote developers from <u>European time zones</u>. Save your time and avoid applying to positions
-    that are U.S. only.
+    to work with remote developers from <u>European time zones</u>.
   </div>
 
   {% include form.html %}
 
   {% for post in site.posts limit: 4 %}
-    <div id="content">
+    <div class="content frontpage-jobs">
       <h2>{{ post.title }} - {{ post.date | date: '%B %d, %Y' }}</h2>
       {{ post.content }}
     </div>
