@@ -18,10 +18,14 @@ html {
 ul {
   font-family: "Open Sans";
   color: #888;
-  .company {
+  .company, .date {
       color: #111;
       font-weight: bold;
       padding-right: 0.5em;
+  }
+  .date {
+    display: inline-block;
+    width: 6.5em;
   }
   padding-left: 0;
   list-style-type: none;
@@ -53,12 +57,16 @@ h1 {
 }
 
 h2 {
-  text-align: left;
-  font-size: 24px;
-  margin-bottom: 0;
-  margin-top: 60px;
-  border-bottom: 3px solid #ddd;
-  color: #445;
+  text-align: center;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .content {
@@ -80,6 +88,15 @@ h2 {
   img {
     width: 550px;
   }
+}
+
+#title_small {
+  img {
+    width: 200px;
+  }
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 #mail_form {
@@ -159,6 +176,15 @@ h2 {
 
 .frontpage-jobs {
   h2 {
+    margin-top: 60px;
     font-size: 14px;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: 0;
+    color: #445;
+    text-align: left;
   }
+}
+
+.bottom-content {
+  margin-top: 30px;
 }

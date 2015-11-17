@@ -5,11 +5,12 @@ layout: default
 
 
   <div class="content">
-    <h2>{{ page.title }} - {{ page.date | date: '%B %d, %Y' }}</h2>
+    <h2>{{ page.title }}</h2>
+    <h3>{{ page.date | date: '%B %d, %Y' }}</h3>
     {{ content }}
   </div>
 
-  <div class="content">
+  <div class="content bottom-content">
     Get a weekly list of job opportunities exclusively from
     companies that are happy
     to work with remote developers from <u>european time zones</u>.
