@@ -5,7 +5,7 @@ $break-point: 850px;
 body {
   font-family: helvetica;
   text-align: center;
-  font-family: "Merriweather";
+  font-family: "Merriweather","Times","serif";
   color: #333;
   font-size: 22px;
   margin-top: 0px;
@@ -17,7 +17,7 @@ html {
 }
 
 ul {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Helvetica";
   color: #888;
   .company, .date {
       color: #111;
