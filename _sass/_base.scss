@@ -11,6 +11,34 @@ body {
   margin-top: 0px;
 }
 
+#sponsored {
+  margin-top: 30px;
+  background-color: #eee;
+  padding: 10px 5px;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica";
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  a {
+    padding: 0.5em 1em;
+    margin-left: 5px;
+    background-color: $hover-color;
+    border: 2px solid $hover-color;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    @media screen and (max-width: $break-point) {
+      width: 90%;
+      display: block;
+      margin-top: 5px;
+    }
+  }
+
+}
+
 html {
   position:relative;
   min-height: 100%;
