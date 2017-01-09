@@ -5,27 +5,10 @@ layout: frontpage
 <div class="home">
 
   <div class="content">
-    {% include description.html %}
+    Unfortunately I had to stop maintaining Europe Remotely due to personal
+    obligations. Thank you for supporting the project and best of luck with
+    your job hunt!
   </div>
-
-  {% include form.html %}
-
-  {% for post in site.posts limit: 1%}
-    <div class="content frontpage-jobs">
-      <h2>{{ post.title }} - {{ post.date | date: '%B %d, %Y' }}</h2>
-      {{ post.content }}
-    </div>
-  {% endfor %}
-
-  {% include advertisement.html %}
-
-
-  {% for post in site.posts limit: 3 offset: 1 %}
-    <div class="content frontpage-jobs">
-      <h2>{{ post.title }} - {{ post.date | date: '%B %d, %Y' }}</h2>
-      {{ post.content }}
-    </div>
-  {% endfor %}
 
   {% include advertisement.html %}
 </div>
